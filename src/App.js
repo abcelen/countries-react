@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <div className="header-container">
+        <h2>Where in the World?</h2>
         <div className="header-wraper">
           <Search />
           <RegionFilter />
