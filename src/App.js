@@ -2,19 +2,16 @@ import React from "react";
 import "./App.css";
 import "./grid.css";
 import CountryCard from "./CountryCard";
-import RegionFIlter from "./RegionFilter";
+import RegionFilter from "./RegionFilter";
+import Search from "./Search";
 
 function App() {
   return (
     <div className="App">
-      <div className="header">
-        <div className="search">
-          <input
-            className="search-input"
-            type="text"
-            placeholder="Search a country"
-          />
-          <RegionFIlter />
+      <div className="header-container">
+        <div className="header-wraper">
+          <Search />
+          <RegionFilter />
         </div>
       </div>
 

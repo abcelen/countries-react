@@ -5,10 +5,7 @@ const CountryCard = () => {
   return (
     <div className="row">
       {data.map((country, index) => (
-        <div
-          className="xl-col-3 lg-col-3 md-col-3 sm-col-12 col-12"
-          key={index}
-        >
+        <div className="xl-col-3 lg-col-4 md-col-4 sm-col-6 col-12" key={index}>
           <a className="link" href="#">
             <div className="country--card ">
               <img className="img" src={country.flag} alt="flag" />
