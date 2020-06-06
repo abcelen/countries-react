@@ -1,11 +1,11 @@
 import React from "react";
 
-const RegionFilter = ({ selectedRegion, setSelectedRegion }) => {
+const RegionFilter = (props) => {
   return (
     <select
       className="select-region"
-      value={selectedRegion}
-      onChange={(e) => setSelectedRegion(e.target.value)}
+      value={props.handleFilter}
+      onChange={props.handleFilter}
     >
       <option value="">Filter by Region</option>
       <option>Africa</option>

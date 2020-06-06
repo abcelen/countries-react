@@ -1,12 +1,13 @@
 import React from "react";
 
-const Search = () => {
+const Search = (props) => {
   return (
     <input
       className="search-input"
-      type="text"
-      placeholder="Search a country"
-    />
+      placeholder="Search for a country"
+      onChange={props.handleChange}
+      type="search"
+    ></input>
   );
 };
 
